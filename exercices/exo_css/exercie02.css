@@ -1,0 +1,10 @@
+.carte {
+    width: 300px;
+    padding: 20px;
+    border: 2px solid navy;
+    margin: 30px auto;
+    border-radius: 10px;
+    background-color: lightyellow;
+    box-sizing: border-box;
+}
+
