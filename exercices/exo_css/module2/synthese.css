@@ -1,0 +1,55 @@
+/* Reset universel : une règle * avec box-sizing: border-box */
+* {
+    box-sizing: border-box;
+}
+
+/* Le margin par défaut du body est supprimé */
+.body {
+    margin: 0px;
+}
+
+/* .entete : fond navy , texte white , padding 30px , texte centré */
+.entete {
+    background-color: navy;
+    color: white;
+    padding: 30px;
+    text-align: center;
+
+}
+
+/* .principal : largeur 900px , centré horizontalement, avec 30px de marge verticale */
+.principal {
+    width: 900px;
+    margin: 30px auto;
+}
+
+/*
+5 .carte : bordure 1px solid lightgray , padding 20px , coins arrondis 8px
+6 Espacement des cartes : chaque carte a 20px de marge en haut et en bas (en une déclaration).
+Question : quel est l'écart réel entre deux cartes ? Justifiez.
+l'écart réel entre deux cartes est de 20px car les marge ne sont pas additionnees
+*/
+.carte {
+    border: 1px solid lightgray;
+    padding: 20px;
+    border-radius: 8px;
+    /* margin: 20px 0; */
+    margin: 20px 10px;
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
+}
+
+/* 7. .badge : inline-block, padding 4px 10px , fond lightblue , coins arrondis 12px */
+.badge  {
+    display: inline-block;
+    padding: 4px 10px;
+    background-color: lightblue;
+    border-radius: 12px;
+}
+
+/* 8.pied : padding 20px , texte centré, bordure supérieure 1px solid gray */
+.pied {
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid gray;
+}
